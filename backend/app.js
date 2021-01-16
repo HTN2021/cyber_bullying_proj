@@ -1,11 +1,19 @@
 const express = require('express');
 const port = 8000;
 const app = express();
+const path = require('path');
+const db = require('./models/mongoose');
+const cookieParser = require('cookie-parser');
+
+app.use(express.urlencoded());
+app.use(cookieParser());
 
 
-app.get('/', (req, res) => {
-    res.send('<h1>Now do it!!</h1>');
-})
+app.use('/', require('./routes'));
+
+app.set('view engine', 'ejs');
+
+
 
 app.listen(port, (err) => {
     if(err) {
