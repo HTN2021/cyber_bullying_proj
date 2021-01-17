@@ -1,0 +1,61 @@
+body {
+    overflow: hidden;
+}
+.inner-container {
+    background: url("../images/login-background.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 610px;
+}
+
+#header {
+    padding-top: 30px;
+    text-align:center;
+    color: #f0f2f5;
+}
+
+#login {
+    margin: 100px 0px;
+    background: #f0f2f5;
+    padding:30px;
+    border-radius: 40px;
+    box-shadow: 0 4px 8px 0 lightgray;
+    transition: 0.3s;
+}
+
+#login:hover {
+    box-shadow: 0 8px 16px 0 lightgray;
+  }
+  
+
+#signup {
+    margin: 100px 0px;
+    background: #3a90a9;
+    color: white;
+    padding:30px;
+    border-radius: 40px;
+    box-shadow: 0 4px 8px 0 lightgray;
+    transition: 0.3s;
+}
+
+#signup:hover {
+    box-shadow: 0 8px 16px 0 lightgray;
+  }
+
+.middleline{
+    background: #f0f2f5;
+    position:absolute;
+    right:50%;
+    top:200px;
+    width:1px;
+    height: 350px;
+    border: 1px solid #f0f2f5;
+}
+
+#error {
+    color: red;
+    font-size:12px;
+    margin:20px;
+    text-align: center;
+}
