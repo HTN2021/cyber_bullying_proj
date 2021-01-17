@@ -8,6 +8,10 @@ module.exports.signIn = (req, res) => {
     return res.render('sign-in');
 }
 
+module.exports.signOut = (req, res) => {
+    return res.redirect('/user/sign-in');
+}
+
 module.exports.create = (req, res) => {
     if(req.body.password != req.body.confirm_password) {
         return res.redirect('back');
@@ -59,7 +63,7 @@ module.exports.profile = (req, res) => {
                     user: user
                 });
             }
-            
+
             return res.redirect('/user/sign-in');
         });
     } else {

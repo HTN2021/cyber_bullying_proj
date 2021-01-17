@@ -8,5 +8,11 @@
 <body>
     <h1>This is the main dashboard!!!</h1>
     <p><%- user.name %></p>
+    <a href="/user/sign-out">Sign Out</a>
+
+    <form action="/post/create" method="post">
+        <input type="text" name="content" id="content" placeholder="Post Your Experience Here....">
+        <input type="submit" value="Post">
+    </form>
 </body>
 </html>
