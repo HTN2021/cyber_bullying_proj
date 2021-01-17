@@ -1,13 +1,9 @@
 {
-  "title": "Landing page template for developers & startups",
-  "text": "Beautifully designed templates using React.js, ant design and styled-components! Save weeks of time and build your landing page in minutes.",
+  "title": "Name: The Cyberbullying Support Group",
+  "text": "Many people have a hard time opening up about how they are being affected by Cyberbullying. Our goal is to create a safe place for people to share their feelings and emotions without feeling judged by sharing them",
   "button": [
     {
-      "title": "Explore"
-    },
-    {
-      "title": "Learn More",
-      "color": "#fff"
+      "title": "Join today!"
     }
   ]
 }

@@ -1,16 +1,6 @@
 {
-  "title": "Light, Fast & Responsive",
-  "text": "This template is ready to use, so you don't need to change anything at a component level, unless you want to customize the default styling.",
-  "section": [
-    {
-      "title": "Why Antd?",
-      "content": "Ant Design is a React UI library that has a plethora of easy-to-use components that are useful for building elegant UI.",
-      "icon": "notes.svg"
-    },
-    {
-      "title": "Why styled-components?",
-      "content": "Styled Components gives you total control over your components, instead of using a multitude of conditional class names.",
-      "icon": "notes.svg"
-    }
-  ]
-}
+    "title": "Our mission",
+    "text": "7 in 10 young people experience cyberbullying before they hit the age of 18. And 41% of people who were cyberbullied developed social anxiety. Our mission is to provide a safe and supportive space for victims of cyberbullying to be able to talk and share experiences with eachother",
+    "button": "Get Started"
+  }
+  

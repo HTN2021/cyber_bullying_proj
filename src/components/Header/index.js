@@ -27,17 +27,18 @@ const Header = ({ t }) => {
     return (
       <Fragment>
         <S.CustomNavLinkSmall>
-          <Link to="/">{t('About')}</Link>
+          <Link to="#introduction">{t('About')}</Link>
         </S.CustomNavLinkSmall>
         <S.CustomNavLinkSmall>
-          <Link to="/">{t('Mission')}</Link>
+          <Link to="#secondBlock">{t('Mission')}</Link>
         </S.CustomNavLinkSmall>
         <S.CustomNavLinkSmall>
-          <Link to="/">{t('Product')}</Link>
+          <Link to="#thirdBlock">{t('What we Do')}</Link>
         </S.CustomNavLinkSmall>
         <S.CustomNavLinkSmall style={{ width: '180px' }}>
-          <Link to="/">
-            <Button>{t('Contact')}</Button>
+          <Link to="/"> 
+          {/*ADD LINK to the login page*/}
+            <Button>{t('Login/Sign up')}</Button>
           </Link>
         </S.CustomNavLinkSmall>
       </Fragment>
