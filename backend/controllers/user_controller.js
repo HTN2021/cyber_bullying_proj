@@ -1,4 +1,5 @@
 const User = require('../models/user');
+const Post = require('../models/posts');
 
 module.exports.signUp = (req, res) => {
     return res.render('sign-up');
@@ -56,17 +57,24 @@ module.exports.createSession = (req, res) => {
 }
 
 module.exports.profile = (req, res) => {
+
     if(req.cookies.user_id) {
         User.findById(req.cookies.user_id, (err, user) => {
             if(user) {
+                Post.find({}, (err, posts) => {
+                    return res.render('dashboard', {
+                        user: user,
+                        posts: posts
+                    });
+                });
+            } else {
                 return res.render('dashboard', {
                     user: user
                 });
             }
-
-            return res.redirect('/user/sign-in');
         });
     } else {
         return res.redirect('/user/sign-in');
     }
+
 }

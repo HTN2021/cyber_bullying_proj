@@ -14,5 +14,12 @@
         <input type="text" name="content" id="content" placeholder="Post Your Experience Here....">
         <input type="submit" value="Post">
     </form>
+
+<% for (post of posts) { %> 
+    <%= post.content %>
+    <br>
+<% } %>
+
+
 </body>
 </html>
